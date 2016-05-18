@@ -1,0 +1,34 @@
+<div id="header" class="div--float_left">
+  <div id="header__menu" class="sidebarButton image--style_square">
+    <%= image_tag("menu.png") %>
+  </div>
+  <h1 id="header__title" class="sidebarButton">Hoge Magazine</h1>
+</div>
+
+<div class="content">
+  <%= image_tag("next_innovation.png") %>
+  <%= image_tag("image_1.jpg") %>
+  <p>
+    名前は残らない。しかし、僕らがおもしろいと思う誰も見たことがない、そして世の中の人が気に入ってくれる　そういうものを作ろう。
+  </p>
+  <a href="https://www.youtube.com/watch?v=FavLMAUZ6mY"><%= image_tag("image_2.jpg") %></a>
+  <p class="text">
+    今ここにない未来は自分で創る!!
+  </p>
+</div>
+
+
+<div class="floatingActionButton--role_addStudent">
+  <div class="ripple-wrap">
+    <span class="ripple__effect is-white"></span>
+    <div>
+      <%= image_tag("add.png", :alt => "add_button", :size => "24x24", :class => "ripple") %>
+    </div>
+  </div>
+</div>
+
+<div id="footer" class="div--float_left">
+  <div id="footer__nextBtn" class="sidebarButton image--style_square">
+    <a href="/hello_world/index2"><%= image_tag("right_arrow.png") %></a>
+  </div>
+</div>

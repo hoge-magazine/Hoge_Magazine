@@ -1,0 +1,40 @@
+<div id="header" class="div--float_left">
+  <div id="header__menu" class="sidebarButton image--style_square">
+    <%= image_tag("menu.png") %>
+  </div>
+  <h1 id="header__title" class="sidebarButton">Hoge Magazine</h1>
+</div>
+
+<div class="content">
+  <%= image_tag("internet.png", :class => "firstImage") %>
+  <h2>Story2 Hello World</h2>
+  <p>
+    10分後、あなたは初めてのプログラムを書き終えています。<br>
+    必要なのはパソコン１台です。<br>
+    ステップはたった3つです。<br>
+    1, デスクトップにindex.htmlというファイルを作ってください。<br>
+    2, そのindex.htmlの中に&lt;h1&gt;Hello World&lt;/h1&gt;と書き込んでください。<br>
+    3, つくったファイルをドラッグ&amp;ドロップでブラウザで表示してください。<br>
+    上の説明で理解できた人は、実際にサイトを表示してみて、次のページに進んでください。<br>
+    わからなかった人は、<a href="#">ここ</a>のページから始めてみましょう！5分でわかるようになります。
+  </p>
+</div>
+
+
+<div class="floatingActionButton--role_addStudent">
+  <div class="ripple-wrap">
+    <span class="ripple__effect is-white"></span>
+    <div>
+      <%= image_tag("add.png", :alt => "add_button", :size => "24x24", :class => "ripple") %>
+    </div>
+  </div>
+</div>
+
+<div id="footer" class="div--float_left">
+  <div id="footer__prevBtn" class="sidebarButton image--style_square">
+    <a href="/hello_world/index2"><%= image_tag("left_arrow.png") %></a>
+  </div>
+  <div id="footer__nextBtn" class="sidebarButton image--style_square">
+    <a href="/hello_world/index4"><%= image_tag("right_arrow.png") %></a>
+  </div>
+</div>

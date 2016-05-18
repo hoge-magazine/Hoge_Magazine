@@ -1,0 +1,55 @@
+<div id="header" class="div--float_left">
+  <div id="header__menu" class="sidebarButton image--style_square">
+    <%= image_tag("menu.png") %>
+  </div>
+  <h1 id="header__title" class="sidebarButton">Hoge Magazine</h1>
+</div>
+
+<div class="content">
+  <%= image_tag("css.png", :class => "firstImage") %>
+  <h2>Story3 CSS</h2>
+  <p>
+    あなたが作ったページの中身はこんな風になってますね。
+  </p>
+    <script src="https://gist.github.com/AkinoIkumi/510640efb7b95d253fe50c0e9729ac75.js"></script>
+  <p>
+    たったこれだけでも、ブラウザで開いてみると立派にwebページになりました。<br>
+    次はこれに見た目を足してみましょう。
+    あなたはさっきhtmlという種類のファイルを作りました。<br>
+    次はcssという種類のファイルを使って見た目を変えてみます。
+  </p>
+  <p>
+    ステップはたったの２つです。<br>
+    １、デスクトップにstyle.cssというファイルをつくり、以下を記述<br>
+    <div><script src="https://gist.github.com/AkinoIkumi/5974461c5419cec8bef92051bdbfb0a8.js"></script></div>
+  </p>
+  <p>
+    ２、このstyle.cssを読み込むために、index.htmlに以下を記述<br>
+    <div><script src="https://gist.github.com/AkinoIkumi/41d9df157731b27184a1c00d74f44258.js"></script></div>
+  </p>
+  <p>
+    もう一度読み込むと、文字が赤くなっているはずです。
+    実は、Webページの見た目に関しての基本機能は以上で終わりです。
+    htmlファイルで要素をつくり、cssで見た目を整える。
+    これだけでWebページなんて簡単に作れます。
+  </p>
+</div>
+
+
+<div class="floatingActionButton--role_addStudent">
+  <div class="ripple-wrap">
+    <span class="ripple__effect is-white"></span>
+    <div>
+      <%= image_tag("add.png", :alt => "add_button", :size => "24x24", :class => "ripple") %>
+    </div>
+  </div>
+</div>
+
+<div id="footer" class="div--float_left">
+  <div id="footer__prevBtn" class="sidebarButton image--style_square">
+    <a href="/hello_world/index3"><%= image_tag("left_arrow.png") %></a>
+  </div>
+  <div id="footer__nextBtn" class="sidebarButton image--style_square">
+    <a href="/hello_world/index5"><%= image_tag("right_arrow.png") %></a>
+  </div>
+</div>
