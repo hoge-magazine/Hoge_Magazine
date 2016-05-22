@@ -8,7 +8,7 @@ gem 'rails', '4.2.4'
 group :development, :test do
   gem 'sqlite3', groups: %w(test development), require: false
 end
-# gem 'pg', groups: %w(production), require: false
+gem 'pg', groups: %w(production), require: false
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,7 +32,7 @@ gem 'carrierwave'
 gem "paperclip"
 
 group :production do
-  # gem 'pg'
+  gem 'pg'
 end
 
 gem 'gon'
