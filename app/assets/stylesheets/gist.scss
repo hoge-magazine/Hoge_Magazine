@@ -1,0 +1,7 @@
+//gistはクラス名を定義できないのでこのファイルで個別に管理
+.gist{
+  padding: 0 30px;
+  &-meta{
+    display: none;
+  }
+}
