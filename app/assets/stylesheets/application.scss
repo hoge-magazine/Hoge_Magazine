@@ -16,21 +16,7 @@
  // Place all the styles related to the HelloWorld controller here.
  // They will automatically be included in application.css.
  // You can use Sass (SCSS) here: http://sass-lang.com/
-
- // マテリアルデザインの基本の色
- $color-primary: #3F51B5;
- $color-secondary: #C5CAE9;
- $color-accent: #E91E63;
- $color-window-background: #E8EAF6;
-
- // よく使うモジュールレベルの色
- $color-white: #ffffff;
- $color-gray: #cccccc;
- $color-black: #000000;
- $color-border: #cccccc;
- $color-red: #ff0000;
- $color-image-background: #eeeeee;
- $color-text-gray: #999999;
+@import "common";
 
  body{
    width: 100%;
@@ -64,55 +50,13 @@
    }
  }
 
- .clearfix:after{
-   content: "";
-   clear: both;
-   display: block;
- }
-
- .div--float_left{
-   @extend .clearfix;
+ #footer{
+   background: $color-primary;
+   padding: 16px;
+   &__nextBtn{
+     float: right;
+   }
    div{
-     float: left;
+     width: 24px;
    }
  }
-
- .image{
-   position: relative;
-   width: 100%;
-   img{
-     width: 100%;
-   }
-   &--style_square{
-     img{
-       width: 100%;
-     }
-   }
-   &--style_circle{
-     img{
-       border-radius: 50%;
-       width: 100%;
-     }
-   }
- }
-
-.animation{
-  animation-duration:0.3s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-in;
-  -moz-animation-duration:0.3s;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-timing-function: ease-in;
-  -webkit-animation-duration:0.3s;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease-in;
-}
-
-.fadeIn{
-  @extend .animation;
-  animation-name: fadeIn;
-}
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}

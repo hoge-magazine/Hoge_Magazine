@@ -1,0 +1,83 @@
+@import "common";
+
+.floating-action-button{
+  display: none;
+  z-index: 12;
+  background: $color-accent;
+  width: 56px;
+  height: 56px;
+  border-radius: 28px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+  img{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  div{
+    height: 100%;
+  }
+}
+
+.floating-action-button--position_fixed{
+  position: fixed;
+  bottom: 40px;
+  right: 16px;
+}
+
+.floating-action-button--role_addStudent{
+  @extend .floating-action-button;
+  @extend .floating-action-button--position_fixed;
+}
+
+.content{
+  h2{
+    font-size: 2.5em;
+    padding: 50px 30px 15px;
+  }
+  opacity: 0;
+  padding-top: 57px;
+  padding-bottom: 150px;
+  img{
+    width: 100%;
+    margin: 50px 0;
+  }
+  p{
+    font-size: 1.6em;
+    line-height: 2.5em;
+    padding: 0 30px;
+  }
+  .text{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .firstImage{
+    margin-top: 0;
+  }
+}
+
+.item--float_left{
+  @extend .clearfix;
+  div{
+    float: left;
+  }
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  &--style_square{
+    img{
+      width: 100%;
+    }
+  }
+  &--style_circle{
+    img{
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
