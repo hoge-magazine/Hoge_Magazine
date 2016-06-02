@@ -25,17 +25,17 @@ h1{
   padding: 2px 0;
 }
 
-#header{
+header{
   position: fixed;
   padding: 16px;
   background-color: $color-primary;
   z-index: 5;
   width: 100%;
   box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.4);
-  &__title{
+  #header__title{
     float: left;
   }
-  &__menu{
+  #header__menu{
     width: 24px;
     margin-right: 32px;
   }
