@@ -41,10 +41,10 @@ header{
   }
 }
 
-#footer{
+footer{
   background: $color-primary;
   padding: 16px;
-  &__next-btn{
+  #footer__next-btn{
     float: right;
   }
   div{
