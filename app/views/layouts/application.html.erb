@@ -20,25 +20,16 @@
     <h1 id="header__title" class="sidebar-button">Hoge Magazine</h1>
   </header>
 
-  <div class="floating-action-button--role_add-student">
-    <div class="ripple-wrap">
-      <span class="ripple__effect is-white"></span>
-      <div>
-        <%= image_tag("add.png", :alt => "add_button", :size => "24x24", :class => "ripple") %>
-      </div>
-    </div>
-  </div>
-
 <%= yield %>
 
   <footer class="item--float_left clearfix">
-    <% if !@prevLink.nil? then %>
-      <div id="footer__prev-btn" class="sidebar-button image--style_square">
+    <% if @prevLink.present? then %>
+      <div id="footer__prev-btn" class="image--style_square">
         <a href="/hello_world/<%= @prevLink %>"><%= image_tag("left_arrow.png") %></a>
       </div>
     <% end %>
-    <% if !@nextLink.nil? then %>
-      <div id="footer__next-btn" class="sidebar-button image--style_square">
+    <% if @nextLink.present? then %>
+      <div id="footer__next-btn" class="image--style_square">
         <a href="/hello_world/<%= @nextLink %>"><%= image_tag("right_arrow.png") %></a>
       </div>
     <% end %>
