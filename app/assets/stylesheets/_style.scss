@@ -1,0 +1,57 @@
+.content{
+  opacity: 0;
+  padding: 57px 0 150px 0;
+  h2{
+    font-size: 2.5em;
+    padding: 50px 30px 15px;
+  }
+  img{
+    width: 100%;
+    margin: 50px 0;
+  }
+  p{
+    font-size: 1.6em;
+    line-height: 2.5em;
+    padding: 0 30px;
+  }
+  .text{
+    font-size: 1.8em;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .first-image{
+    margin-top: 0;
+  }
+}
+
+.item--float_left{
+  div{
+    float: left;
+  }
+}
+
+.image{
+  position: relative;
+  width: 100%;
+  img{
+    width: 100%;
+  }
+  &--style_square{
+    img{
+      width: 100%;
+    }
+  }
+  &--style_circle{
+    img{
+      border-radius: 50%;
+      width: 100%;
+    }
+  }
+}
+
+.gist{
+  padding: 0 30px;
+  &-meta{
+    display: none;
+  }
+}

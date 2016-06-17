@@ -13,14 +13,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div id="header" class="div--float_left">
-    <div id="header__menu" class="sidebarButton image--style_square">
-      <%= image_tag("menu.png") %>
+  <header class="item--float_left clearfix">
+    <div id="header__menu" class="sidebar-button image--style_square">
+      <%= image_tag("menu.svg") %>
     </div>
-    <h1 id="header__title" class="sidebarButton">Hoge Magazine</h1>
-  </div>
+    <h1 id="header__title" class="sidebar-button">Hoge Magazine</h1>
+  </header>
 
 <%= yield %>
+
+  <footer class="item--float_left clearfix">
+    <% if @prevLink.present? then %>
+      <div id="footer__prev-btn" class="image--style_square">
+        <a href="/hello_world/<%= @prevLink %>"><%= image_tag("back.svg") %></a>
+      </div>
+    <% end %>
+    <% if @nextLink.present? then %>
+      <div id="footer__next-btn" class="image--style_square">
+        <a href="/hello_world/<%= @nextLink %>"><%= image_tag("forword.svg") %></a>
+      </div>
+    <% end %>
+  </footer>
 
 </body>
 </html>
